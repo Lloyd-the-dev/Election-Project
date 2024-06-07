@@ -1,13 +1,14 @@
 import './App.css'
-import { Form } from './components/Form'
+import VoterForm from './components/Form.jsx'
 import { NavbarDefault } from './components/NavbarDefault'
 
 function App() {
 
+  
   return (
     <div className="App">
         <NavbarDefault/>
-        <Form/>
+        <VoterForm/>
     </div>
   )
 }

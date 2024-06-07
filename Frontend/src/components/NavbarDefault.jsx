@@ -6,6 +6,7 @@ import {
   Typography,
   Button,
   IconButton,
+  Collapse,
 } from "@material-tailwind/react";
  
 export function NavbarDefault() {
@@ -77,7 +78,7 @@ export function NavbarDefault() {
           )}
         </IconButton>
       </div>
-      <MobileNav open={openNav}>
+      <Collapse open={openNav}>
         <div className="container mx-auto">
           <div className="flex items-center gap-x-1">
             <Button fullWidth variant="text" size="sm" className="bg-blue-gray-900 text-white">
@@ -85,7 +86,7 @@ export function NavbarDefault() {
             </Button>
           </div>
         </div>
-      </MobileNav>
+      </Collapse>
     </Navbar>
   );
 }
