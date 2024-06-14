@@ -33,7 +33,7 @@ class VoterForm extends Component {
     const item = this.state.activeItem;
     
     axios
-      .post("/api/Voters/", item)
+    .post("http://localhost:8000/api/Voters/", item)
       .then((res) => {
         console.log(res.data)
         console.log("Data successfully sent to the server:", res.data);
